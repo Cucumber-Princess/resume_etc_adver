@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertising Design</title>
+
+    <link rel="stylesheet" href="style/style_m.css">
+    <link rel="stylesheet" href="style/style_pc.css">
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="wrap">
+                <h1>Advertising Design</h1>
+            </div>
+        </header>
+        <div class="index">
+            <div class="wrap">
+                <div class="image">
+                    <button><img src="images/1.jpg" alt="3phcrm"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/3ph.jpg" alt="3phcrm"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/2.jpg" alt="추석이벤트배너"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/Thanksgiving.jpg" alt="추석이벤트배너"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/3.jpg" alt="클리네어출시배너"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/cleanair.jpg" alt="클리네어출시배너"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/4.jpg" alt="봄이벤트배너"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/spring.png" alt="봄이벤트배너"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/5.jpg" alt="샤핀보답특가이벤트이미지"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/sharphin.jpg" alt="샤핀보답특가이벤트이미지"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <button><img src="images/6.jpg" alt="스파이더클리어겔출시배너"></button>
+                    <div class="popup">
+                        <div class="img"><img src="images/spider.jpg" alt="스텔스연출샷-2"></div>
+                        <button><img src="images/x.png" alt="닫기버튼"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $(".index .wrap .image button").click(function(){
+                $(this).next().stop().fadeIn();
+            });
+            $(".index .wrap .image .popup button").click(function(){
+                $(this).parent().stop().fadeOut();
+            })
+        });
+    </script>
+</body>
+</html>

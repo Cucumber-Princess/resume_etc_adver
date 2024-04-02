@@ -1,0 +1,22 @@
+@media (min-width: 1200px)  {
+    header .wrap{
+        width: 80%;
+    }
+    .index .wrap{
+        width: 80%;
+        margin: 5% auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .index .wrap .image .popup .img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: unset;
+    }
+    .index .wrap .image:nth-child(n+7) .popup .img{
+        width: unset;
+    }
+}

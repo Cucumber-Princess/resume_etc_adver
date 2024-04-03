@@ -16,7 +16,8 @@
         transform: translate(-50%, -50%);
         width: unset;
     }
-    .index .wrap .image:nth-child(n+7) .popup .img{
-        width: unset;
+    .index .wrap .image:nth-child(2) .popup .img img{
+        max-width: 65%;
+        transform: translate(25%, 0);
     }
 }
